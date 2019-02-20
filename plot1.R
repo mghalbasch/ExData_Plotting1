@@ -14,7 +14,7 @@ Feb_data <- filter(power_data, Date == "1/2/2007" |
 
 # Now we can make the plot - a histogram of global active power.
 
-png(filename = "plot1.png")
+png(filename = "plot1.png", width=480, height=480)
 
 hist(as.numeric(Feb_data$Global_active_power), breaks = 12,
      xlab="Global Active Power (kilowatts)", ylab="Frequency",
